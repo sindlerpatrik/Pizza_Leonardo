@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pizzerie Leonardo</title>
+	<link rel="icon" type="image/x-icon" href="/images/logo.jpg">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<header class="zahlavi">
+		<img class="logo" src="images/logo.jpg" alt="pizzerie logo">
+
+		<nav class="menu" role="navigation" id="navigacniMenu">
+			<button class="zavrit" onclick="w3_close()">Zavřít</button>
+			<ul>
+				<li><a href="#Onas">O nás</a></li>
+				<li><a href="#Menu">Menu</a></li>
+				<li><a href="#Cenik">Ceník</a></li>
+				<li><a href="#Fotogalerie">Fotogalerie</a></li>
+				<li><a href="#Obejdnavky">Objednávky</a></li>
+			</ul>
+		</nav>
+		<button class="carky" onclick="w3_open()">☰ Menu</button>
+	</header>
+
+	<script>
+		function w3_open() {
+			document.getElementById("navigacniMenu").style.display = "block";
+		}
+
+		function w3_close() {
+			document.getElementById("navigacniMenu").style.display = "none";
+		}
+	</script>
+
+	<main>
+		<section id="Onas" class="o-nas">
+			<div class="zacatek">
+				<h1>NEJLEPŠÍ PIZZA V OKOLÍ</h1>
+			</div>
+		</section>
+
+		<section>
+			<div class="uvod">
+				<div class="sloupec">
+					<h2>O nás</h2>
+
+					<p>Jsme malá <strong>pizzerka</strong>, která se od roku 2016 snaží dělat tu nejlepší pizzu v okolí.
+						Pizzu připavujeme ve <strong>dvou kategoriích a velikostech</strong> s unikátní recepturou
+						nadýchaného a přitom křehkého těsta a využitím <strong>kvalitních čerstvých surovin</strong>.
+						Kromě <strong>pizzy</strong> nabízíme rovněž <strong>saláty, těstoviny a gnocchi</strong>.</p>
+
+				</div>
+
+				<div class="sloupec">
+					<h2>Kontakty</h2>
+
+					<p><strong>Telefon: </strong> <a href="tel:+420 778 878 787">778 878 787</a></p>
+
+					<p><strong>Adresa: </strong>Strmilov 354 42, Olivová 456</p>
+
+					<p><strong>Provozní doba: </strong>po-ne 10.00 –22.00 hod</p>
+
+					<p><strong>Rozvoz: </strong>do 15km</p>
+				</div>
+
+			</div>
+
+			<section id="Menu" class="menicko">
+				<div class="zacatek">
+					<h1>MENU</h1>
+				</div>
+				<div class="jidelnicek">
+					<div class="sloupec">
+						<h2>Pizzy</h2>
+						<p>1. Šunková</p>
+						<img src="images/sunkova.jpg" alt="pizza-sunkova" class="image">
+
+						<p>2. Margherita</p>
+						<img src="images/Margherita.jpg" alt="pizza-syrova" class="image">
+
+						<p>3. Salami</p>
+						<img src="images/Salami.jpg" alt="pizza-salamova" class="image">
+
+						<p>4. Hawai</p>
+						<img src="images/Hawai.jpg" alt="pizza-hawai" class="image">
+
+						<p>5. Kuřecí</p>
+						<img src="images/kureci.jpg" alt="pizza-kureci" class="image">
+					</div>
+
+					<div class="sloupec">
+						<h2>Saláty</h2>
+						<p>1. Salát kuřecí</p>
+						<img src="images/Salat.jpg" alt="salat-kureci" class="image">
+
+						<p>2. Salát Ceasar</p>
+						<img src="images/Salat_Ceasar.jpg" alt="salat-ceasar" class="image">
+					</div>
+
+					<div class="sloupec">
+						<h2>Těstoviny</h2>
+						<p>1. Lasagne</p>
+						<img src="images/Lasagne.jpg" alt="testoviny-lasagne" class="image">
+
+						<p>2. Špagety</p>
+						<img src="images/Spagety.jpg" alt="testoviny-spagety" class="image">
+
+						<p>3. Penne</p>
+						<img src="images/Penne.jpg" alt="testoviny-penne" class="image">
+
+						<p>4. Fussili</p>
+						<img id="Cenik" src="images/Fussili.jpg" alt="testoviny-ruote" class="image">
+					</div>
+
+					<div class="sloupec">
+						<h2>Gnocchi</h2>
+						<p>1. Noky</p>
+						<img src="images/Noky.jpg" alt="gnocchi-noky" class="image">
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<section class="tabulka">
+
+			<h1>Ceník</h1>
+
+			<div class="table">
+				<div id="Fotogalerie" class="polozky"><strong>Pizza (32cm)</strong></div>
+
+				<div class="polozky"><strong>Pizza (40cm)</strong></div>
+
+				<div class="polozky"><strong>Saláty (350g)</strong></div>
+
+				<div class="polozky"><strong>Těstoviny (400g)</strong></div>
+
+				<div class="polozky"><strong>Rozvoz</strong></div>
+
+				<div class="ceny">140Kč</div>
+				<div class="ceny">180Kč</div>
+				<div class="ceny">119Kč</div>
+				<div class="ceny">170Kč</div>
+				<div class="ceny">Do 5Km zdarma, 6-10Km 30Kč, <br>11-15Km 55Kč</div>
+			</div>
+		</section>
+
+		<h1>Fotogalerie</h1>
+		<section>
+			<div class="galerie">
+				<div class="foto"><img src="images/triko.jpg" alt="tricko">Triko s logem</div>
+				<div class="foto"><img src="images/hrnek.jpg" alt="hrnek">Hrnek s logem</div>
+				<div class="foto"><img src="images/cepice.jpg" alt="cepice">Čepice s logem</div>
+				<div class="foto"><img src="images/Hawai.jpg" alt="hawai">Pizza Hawai</div>
+				<div class="foto"><img src="images/Lasagne.jpg" alt="lasagne">Lasagne</div>
+				<div id="Obejdnavky" class="foto"><img src="images/kureci.jpg" alt="kureci">Pizza Kuřecí</div>
+			</div>
+		</section>
+
+		<section class="objednavka">
+			<h1>Objednejte si</h1>
+			<fieldset>
+				<ul>
+					<li>
+						<label for="ulice">Ulice a číslo domu:</label>
+						<input type="text" id="ulice" name="ulice" class="velke">
+					</li>
+					<li>
+						<label for="mesto">Město:</label>
+						<input type="text" id="mesto" name="mesto" class="velke">
+					</li>
+					<li>
+						<label for="psc">PSČ:</label>
+						<input type="text" id="psc" name="psc" class="male">
+					</li>
+					<li>
+						<label for="telefon">Telefon:</label>
+						<input type="tel" id="tlefon" name="telefon" class="velke">
+					</li>
+				</ul>
+			</fieldset>
+			<div class="button">
+				<a href="Odeslat">Odeslat</a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="zapati">
+		<p>©2022, Patrik Šindler</p>
+	</footer>
+
+</body>
+
+</html>

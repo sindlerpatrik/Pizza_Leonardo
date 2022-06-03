@@ -1,0 +1,416 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.5;
+	color: black;
+}
+
+.zahlavi {
+	position: sticky;
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	top: 0;
+}
+
+.menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	border: none;
+}
+
+.menu a {
+	font-weight: bold;
+	padding: 5px 40px;
+	text-decoration: none;
+	color: black;
+}
+
+.menu a:hover {
+	text-decoration: none;
+	color: #ff7300;
+}
+
+.logo {
+	height: auto;
+}
+
+h1,
+h2 {
+	line-height: 1.25;
+}
+
+h1 {
+	text-align: center;
+}
+
+.o-nas {
+	background: url(images/pizza.jpg) no-repeat center/cover;
+	color: white;
+}
+
+h2 {
+	margin: 20px 0;
+}
+
+.jidelnicek {
+	display: grid;
+	color: white;
+	font-weight: bold;
+	text-shadow: 2px 2px #000000;
+	text-align: center;
+}
+
+.uvod {
+	text-align: center;
+}
+
+.zacatek {
+	padding: 50px;
+	color: white;
+}
+
+.zapati {
+	text-align: center;
+	color: black;
+	padding: 30px 0;
+	background-color: white;
+}
+
+.carky {
+	position: absolute;
+	top: 35px;
+	left: 30px;
+	border: 0;
+	font-weight: bold;
+	background-color: white;
+}
+
+.zavrit {
+	font-weight: bold;
+	border: none;
+	background-color: white;
+	font-size: 30px;
+}
+
+.sloupec {
+	line-height: 2;
+	margin: 50px;
+}
+
+.image {
+	width: 250px;
+	border-radius: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.table {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	margin: 0 30px;
+}
+
+.polozky,
+.ceny {
+	margin: auto;
+	text-align: center;
+}
+
+.ceny {
+	color: rgb(0, 66, 0);
+}
+
+.objednavka {
+	text-align: center;
+}
+
+fieldset {
+	margin: auto;
+	border: 0;
+	overflow: hidden;
+}
+
+.foto img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+fieldset ul {
+	padding: 0;
+	background-color: #fff;
+	border: 1px solid #eaeaea;
+	list-style: none;
+}
+
+fieldset li {
+	margin: 0.5em 0;
+}
+
+label {
+	margin: auto;
+	display: inline-block;
+	text-align: left;
+	width: 200px;
+	vertical-align: top;
+}
+
+.button a {
+	display: block;
+	text-decoration: none;
+	width: 250px;
+	margin: 0 auto;
+	padding: 15px;
+	background-color: rgb(255, 115, 0);
+	border-radius: 10px;
+	color: white;
+	transition: transform .2s;
+}
+
+.button a:hover {
+	text-decoration: none;
+	transform: scale(1.5);
+}
+
+input,
+select,
+button {
+	font: inherit;
+}
+
+.galerie {
+	display: grid;
+}
+
+@media screen and (max-width: 600px) {
+	::-webkit-scrollbar {
+		display: none;
+	}
+
+	body {
+		font-size: 17px;
+		max-width: 600px;
+	}
+
+	.zacatek {
+		text-shadow: 5px 2px #000000;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.menu li {
+		padding: 5px;
+	}
+
+	.logo {
+		width: 100px;
+	}
+
+	h1 {
+		font-size: 30px;
+		padding: 500px auto;
+	}
+
+	.o-nas h1 {
+		text-shadow: 2px 5px #000000;
+	}
+
+	.menicko {
+		background-image: url(images/wood.jpg);
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	.table {
+		font-size: 15px;
+	}
+
+	.galerie {
+		margin: 0 30px;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		font-size: 25px;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.menu li {
+		padding: 5px;
+	}
+
+	.logo {
+		width: 150px;
+	}
+
+	h1 {
+		font-size: 50px;
+		padding: 50px 0;
+	}
+
+	.o-nas {
+		text-shadow: 2px 5px #000000;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+
+	.jidelnicek {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.menicko {
+		background-image: url(images/wood.jpg);
+	}
+
+	.zacatek {
+		text-shadow: 5px 5px #000000;
+	}
+
+	.table {
+		font-size: 20px;
+	}
+
+	.galerie {
+		margin: 0 auto;
+		max-width: 768px;
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 50px;
+	}
+
+	.foto img {
+		width: 400px;
+		height: 100%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	body {
+		font-size: 35px;
+		color: black;
+	}
+
+	.zahlavi {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.zavrit,
+	.carky {
+		display: none;
+	}
+
+	.menu {
+		display: flex;
+	}
+
+	.menu ul {
+		display: flex;
+	}
+
+	.logo {
+		width: 200px;
+	}
+
+	.menu li {
+		margin-left: 5px;
+	}
+
+	h1 {
+		font-size: 70px;
+		margin: 100px 0;
+	}
+
+	.o-nas h1 {
+		text-shadow: 10px 5px #000000;
+	}
+
+	h2 {
+		font-size: 50px;	}
+
+	.uvod {
+		display: flex;
+		justify-content: space-evenly;
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+
+	.jidelnicek h2{
+	text-shadow: 5px 5px #000000;
+	}
+
+	.zacatek {
+		text-shadow: 10px 5px #000000;
+	}
+
+	.jidelnicek {
+		padding: 0;
+		grid-template-columns: repeat(4, 1fr);
+		background: #2e2a28 url(images/wood.jpg) no-repeat center/cover;
+		width: auto;
+	}
+
+	.sloupec {
+		font-size: 20px;
+		max-width: 400px;
+	}
+
+	.image {
+		width: 300px;
+	}
+
+	.table {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 0 30px;
+		font-size: 25px;
+	}
+
+	.galerie {
+		max-width: 1100px;
+		grid-template-columns: repeat(3, 1fr);
+		row-gap: 100px;
+		position: relative;
+		z-index: -1;
+	}
+
+	.foto img {
+		height: 100%;
+	}
+
+	fieldset {
+		display: flex;
+		justify-content: space-evenly;
+		margin: 50px auto;
+		max-width: 1100px;
+	}
+
+	label {
+		width: 300px;
+	}
+}
